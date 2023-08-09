@@ -29,15 +29,11 @@
         private void InitializeComponent()
         {
             this.lblPais = new System.Windows.Forms.Label();
-
             this.dgv = new System.Windows.Forms.DataGridView();
             this.btnAggPais = new System.Windows.Forms.Button();
             this.txtPais = new System.Windows.Forms.TextBox();
-
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dgv = new System.Windows.Forms.DataGridView();
             this.btnCargarPais = new System.Windows.Forms.Button();
-
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,16 +46,6 @@
             this.lblPais.TabIndex = 0;
             this.lblPais.Text = "Pais";
             // 
-
-
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(158, 95);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(164, 21);
-            this.comboBox1.TabIndex = 1;
-            // 
             // dgv
             // 
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -70,7 +56,7 @@
             // 
             // btnAggPais
             // 
-            this.btnAggPais.Location = new System.Drawing.Point(182, 143);
+            this.btnAggPais.Location = new System.Drawing.Point(178, 122);
             this.btnAggPais.Name = "btnAggPais";
             this.btnAggPais.Size = new System.Drawing.Size(66, 25);
             this.btnAggPais.TabIndex = 3;
@@ -84,9 +70,18 @@
             this.txtPais.Name = "txtPais";
             this.txtPais.Size = new System.Drawing.Size(141, 20);
             this.txtPais.TabIndex = 4;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(150, 95);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(164, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
             // btnCargarPais
             // 
-            this.btnCargarPais.Location = new System.Drawing.Point(193, 151);
+            this.btnCargarPais.Location = new System.Drawing.Point(178, 153);
             this.btnCargarPais.Name = "btnCargarPais";
             this.btnCargarPais.Size = new System.Drawing.Size(66, 25);
             this.btnCargarPais.TabIndex = 3;
@@ -99,20 +94,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(466, 522);
-
             this.Controls.Add(this.txtPais);
             this.Controls.Add(this.btnAggPais);
-            this.Controls.Add(this.dgv);
-            this.Controls.Add(this.lblPais);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.Controls.Add(this.btnCargarPais);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblPais);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

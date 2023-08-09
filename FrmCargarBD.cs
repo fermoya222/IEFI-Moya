@@ -39,15 +39,10 @@ namespace pryMoyaIEFI
             string apellido = txtApellido.Text;
             string pais = cmbPais.Text;
 
-
+            //crea obj clase y me pasa los datos del socio
             ClaseBD objCargarBD = new ClaseBD();
             objCargarBD.agregarSocio(nombre, apellido, pais, Convert.ToInt32(mtxtEdad.Text), optMasculino.Checked, Convert.ToInt32(mtxtIngreso.Text), Convert.ToInt32(mtxtPuntaje.Text));
 
-
-            //objCargarBD.ConectarBD();
-            //objCargarBD.CargarCmbN(cmbNombre);
-            //objCargarBD.CargarCmbA(cmbApellido);
-            //objCargarBD.CargarCmbP(cmbPais);
 
         }
 
